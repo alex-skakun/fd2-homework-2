@@ -15,7 +15,7 @@ function calc(a, b) {
       }
     }
 
-    return null;
+    // return null;
   };
 }
 

@@ -1,6 +1,6 @@
 function calc(numbA, numbB) {
     return function (arithmeticOperation) {
-        if (typeof (numbA) !== 'number' || typeof (numbB) !== 'number') {
+        if (dataValidation(numbA) || dataValidation(numbB)) {
             return null;
         }
 
@@ -17,4 +17,8 @@ function calc(numbA, numbB) {
                 return null;
         }
     }
+}
+
+function dataValidation(data) {
+    return (typeof (data) !== 'number');
 }
